@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=description content="Price History is a free price tracker tool for checking price history, setting price drop alerts of any product from Amazon, Flipkart, Myntra &amp; more stores." />
+    <meta name=keywords content="Price History, Price Tracker, Price Drop Alerts, Price Tracker for Amazon, Price Tracker for Flipkart, Price History Amazon, Price History Flipkart, Amazon Price Drop Alerts, Flipkart Price Drop Alerts">
+    <title>Price History - Free Price Tracker &amp; Price Drop Alerts</title>
+    <link rel="shortcut icon" href=images/favicon.png type=image/x-icon>
+    <link rel=apple-touch-icon sizes=152x152 href=images/apple-touch-icon-152x152.png>
+    <link rel=apple-touch-icon sizes=120x120 href=images/apple-touch-icon-120x120.png>
+    <link rel=apple-touch-icon sizes=76x76 href=images/apple-touch-icon-76x76.png>
+    <link rel=apple-touch-icon href=images/apple-touch-icon.png>
+    <link href=css/bootstrap.css rel=stylesheet>
+    <link href=css/theme.css rel=stylesheet>
+    <link href=css/animate.css rel=stylesheet>
+    <link href=css/responsive.css rel=stylesheet>
+    <script src=js/jquery.js type="c3aa297b9365bff4686be068-text/javascript"></script>
+    <script src=js/pricehistory.js type="c3aa297b9365bff4686be068-text/javascript"></script>
+    <script src=js/sweetalert.js type="c3aa297b9365bff4686be068-text/javascript"></script>
+    <link href=css/custom.css rel=stylesheet>
+    <meta name="yandex" content="2533223851">
+    <noscript>
+        <link href=css/font-awesome.css rel=stylesheet>
+        <link href=css/owl.css rel=stylesheet>
+    </noscript>
+    <script type="c3aa297b9365bff4686be068-text/javascript">
+    $( document ).ready(function() {
+        var cssFiles = ["css/font-awesome.css", "css/owl.css"];
+        cssFiles.forEach(injectCssFiles);
+        function injectCssFiles(file) {
+            var booster = document.createElement('link');
+            booster.rel = 'stylesheet';
+            booster.href = file;
+            booster.type = 'text/css';
+            var deferit = document.getElementsByTagName('link')[0];
+            deferit.parentNode.insertBefore(booster, deferit);
+        }
+    });
+    </script>
+    <script src="js/highcharts.js" type="c3aa297b9365bff4686be068-text/javascript"></script>
+        <script type="application/ld+json">{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Price History",
+        "url": "https://pricehistory.in",
+        "sameAs": [
+            "https://www.facebook.com/pricehistory.in",
+        ]
+    }
+    </script>
+    <script type="application/ld+json">{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://pricehistory.in",
+        "logo": "https://pricehistory.in/images/logo.png"
+        }
+    </script>
+    <script async src="gtag/js_id_ua-50001635-52.js" type="c3aa297b9365bff4686be068-text/javascript"></script>
+    <script type="c3aa297b9365bff4686be068-text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-50001635-52');
+    </script>
+</head>
+<body>
+    <input type="hidden" name="_token" value="CWJich1UM4PzVaOfBBjvBEW6ahii7OU9nfKWjXQd" id="_token">
+    <input type="hidden" id="2xaf57a">
+    <input type="hidden" id="9asf03c">
+        <div id=page class=page>
+    <header id=header class=header>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-tra hover-menu white-scroll">
+        <div class=container>
+            <a href=index.html class="navbar-brand logo-black"><img src=images/logo.svg width=155 height=35 alt=header-logo></a>
+            <a href=#hero-10 class="navbar-brand logo-white"><img src=images/logo-white.png width=155 height=35 alt=header-logo></a>
+            <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+                <span class=navbar-bar-icon><i class="fas fa-bars"></i></span>
+                </button>
+            <div id=navbarSupportedContent class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item nl-simple"><a class=nav-link href=index.html >Home</a></li>
+                                            <li class="nav-item dropdown">
+                           
+                            
+                        </li>
+          
+                                    </ul>
+                <span class=navbar-text>
+                                            <a href=# class="btn btn-primary-color white-color" onclick="if (!window.__cfRLUnblockHandlers) return false; firelogin()" data-cf-modified-c3aa297b9365bff4686be068-=""><i class="fas fa-sign-in-alt"></i> Login</a>
+                                        </span>
+            </div>
+        </div>
+    </nav>
+</header>
+        <section id=hero-10 class="hero-section division">
+        <div class=container>
+            <div class=row>
+                <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+                    <div class="hero-txt text-center mb-30">
+                        <h3 class=steelblue-color>Free Price Tracker for<br>Amazon, Flipkart & more</h3>
+                        <form class=hero-newsletter-form id="priceHistoryForm">
+                            <div class=input-group>
+                                <input type=text class="form-control product-input" placeholder="Enter Product URL" id=product_url><br>
+                                <span class=input-group-btn>
+                                    <button type=button id=check class="btn btn-primary-color white-color">
+                                        <div id=checktext>Check</div>
+                                        <i class="fas fa-circle-notch fa-spin" style="display: none; font-size: 20px;" id=checkloader></i>
+                                    </button>
+                                </span>
+                            </div>
+                    </form>
+                    <div class="mb-20 mt-2">
+                        <div id=ajax-alerts></div>
+                        <span class=grey-color style=font-size:17px;>Price History is now available on <a style="color: #689f38;" href="https://play.google.com/store/apps/details?id=in.pricehistory.app"><b><i style="color: #689f38;" class="fab fa-android"></i> Android</b></a> and <a style="color: #1c205a;" href="https://www.icloud.com/shortcuts/6e3a39427ef0401cbbc8ff335a786907"><b><i style="color: #1c205a;" class="fab fa-apple"></i> iOS Shortcuts</b></a></span>
+                    </div>
+                    <div class=stores-center>
+                        <section class=customer-logos>
+                            <img class="slide store-icon" src=images/brands/amazon.png />
+                            <img class="slide store-icon" src=images/brands/flipkart.png />
+                            <img class="slide store-icon" src=images/brands/snapdeal.png />
+                            <img class="slide store-icon" src=images/brands/myntra.png />
+                            <img class="slide store-icon" src=images/brands/paytmmall.png />
+                            <img class="slide store-icon" src=images/brands/ajio.png />
+                            <img class="slide store-icon" src=images/brands/jabong.png />
+                            <img class="slide store-icon" src=images/brands/koovs.png />
+                            <img class="slide store-icon" src=images/brands/croma.png />
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section id=showResults class="wide-50 services-section division">
+    <div class="container text-center" style="padding-left: 10rem!important; padding-right: 8.5rem!important;">
+        <h6 id=productTitle style="font-weight: 500!important; font-size: 17px!important;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;"></h6>
+</div>
+<div class=container id=showgraph style="height: 350px; max-width: 900px; display:none;"></div>
+<div class="container" id=showActions style="max-width: 900px; display:none;">
+    <button onclick="if (!window.__cfRLUnblockHandlers) return false; goToTop()" type=button class="btn btn-sm btn-primary-color white-color actionBtn" data-cf-modified-c3aa297b9365bff4686be068-="">
+        <i class="fas fa-redo-alt"></i>
+    </button>
+    <button type=button data-toggle=modal data-target=#embedModal class="btn btn-sm btn-bluegrey white-color actionBtn">
+        <i class="fas fa-code"></i>
+    </button>
+    <button type=button data-toggle=modal data-target=#shareModal class="btn btn-sm btn-deeporange white-color actionBtn">
+        <i class="fas fa-share-alt"></i> Share this chart
+    </button>
+        <button type=button onclick="if (!window.__cfRLUnblockHandlers) return false; firelogin()" class="btn btn-sm btn-blue white-color actionBtn" data-cf-modified-c3aa297b9365bff4686be068-="">
+        <i class="fas fa-bell"></i> Set Price Alerts
+    </button>
+    <div class="float-right compareBtn">
+    <button id=compareBtn type=button data-toggle=modal data-target=#comparisonModal class="btn btn-sm btn-primary-color white-color actionBtn">
+        <i class="fas fa-plus-square"></i> Compare
+    </button>
+    </div>
+    <div class="clearfix"></div>
+    <div class="row mt-2 p-4" style="background-color: #ffffe5; border-radius: 10px;">
+        <div class="col-md-2 col-sm-4 offset-md-1" style="overflow-x: hidden;">
+            <img id=productImage height="100px"/>
+        </div>
+        <div class="col-md-8 col-sm-8">
+            <div class=row>
+                    <h6 id=productTitleBuy style="font-weight: 500!important; font-size: 17px!important;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;"></h6>
+            </div>
+            <div class=row>
+                <h6 id=dropChances style="font-size: 15px!important; font-weight: 500!important; color: #808080;"></h6>
+            </div>
+            <div class=row>
+                <button id=buyNow type=button class="btn btn-darkgreen white-color actionBtn" >
+                    <i class="fas fa-cart-plus"></i> Buy Now
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class=container id=features style=display:block;>
+        <div class=row>
+            <div class="col-lg-10 offset-lg-1 section-title">
+                <p class=p-md>Price History provides historic price charts for millions of products from multiple stores. Here are some of our features:</p>
+            </div>
+        </div>
+        <div class=row>
+            <div class="col-sm-6 col-md-4">
+                <div class="sbox-4 wow fadeInUp" data-wow-delay=0.1s>
+                    <img class=img-65 src=images/icons/presentation.png alt=service-icon />
+                    <div class=sbox-4-txt>
+                        <h5 class="h5-sm steelblue-color">Price Charts</h5>
+                        <p>Price History allows you to check historic price charts for millions of products from multiple stores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="sbox-4 wow fadeInUp" data-wow-delay=0.3s>
+                    <img class=img-65 src=images/icons/notification.png alt=service-icon />
+                    <div class=sbox-4-txt>
+                        <h5 class="h5-sm steelblue-color">Price Alerts</h5>
+                        <p>Get notified whenever price of your favourite product drops, Our active tracking system will notify you</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="sbox-4 wow fadeInUp" data-wow-delay=0.4s>
+                    <img class=img-65 src=images/icons/coins.png alt=service-icon />
+                    <div class=sbox-4-txt>
+                        <h5 class="h5-sm steelblue-color">100% Free</h5>
+                        <p>We won't charge you a single penny for using any of our services. Neither we serve ads on any platform</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="sbox-4 wow fadeInUp" data-wow-delay=0.5s>
+                    <img class=img-65 src=images/icons/strategy.png alt=service-icon />
+                    <div class=sbox-4-txt>
+                        <h5 class="h5-sm steelblue-color">Identify Fake Deals</h5>
+                        <p>E-commerce stores provide deals everyday with fake discounted prices. Identify them with Price Charts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="sbox-4 wow fadeInUp" data-wow-delay=0.6s>
+                    <img class=img-65 src=images/icons/clipboard.png alt=service-icon />
+                    <div class=sbox-4-txt>
+                        <h5 class="h5-sm steelblue-color">Product Wishlist</h5>
+                        <p>You can wishlist unlimited products from any store to quickly access price history from your wishlist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="sbox-4 wow fadeInUp" data-wow-delay=0.7s>
+                    <img class=img-65 src=images/icons/faq.png alt=service-icon />
+                    <div class=sbox-4-txt>
+                        <h5 class="h5-sm steelblue-color">Active Support</h5>
+                        <p>We have the best support team, just ask for any feature you need on our platform or any other query</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        
+        
+        <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="c3aa297b9365bff4686be068-text/javascript">
+        var priceHistoryChart = Highcharts.chart('showgraph', {
+            chart: {
+                type: 'area',
+            },
+            title: false,
+            subtitle:false,
+            xAxis: {
+                type: 'datetime',
+                labels: {
+                    format: '{value:%b %e}'
+                }
+            },
+            tooltip: {
+                xDateFormat: '%d %b %Y',
+                pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>₹{point.y}</b><br/>'
+            },
+            plotOptions: {
+                series: {
+                    fillOpacity: 0.2,
+                    marker: {
+                        enabled: false
+                    }
+                }
+            },
+            yAxis: {
+                title: {
+                    text: false
+                },
+                labels: {
+                    format: '₹{value}'
+                }
+            }
+        });
+        </script>
+    <script src=js/mobile-detect.js type="c3aa297b9365bff4686be068-text/javascript"></script>
+    <script src=js/all.js type="c3aa297b9365bff4686be068-text/javascript"></script>
+    <script defer src=js/custom.js type="c3aa297b9365bff4686be068-text/javascript"></script>
+    <script type="c3aa297b9365bff4686be068-text/javascript">new WOW().init();</script>
+<script src="cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="c3aa297b9365bff4686be068-|49" defer=""></script><script defer src="beacon.min.js" data-cf-beacon='{"rayId":"56e1e9866bc6fe16","version":"2019.10.2","startTime":1583223354567}'></script>
+<center><font size="2">This is the free demo result. For a full version of this website, please go to  <a href="https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/">https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/</a></font></center></body>
+</html>
